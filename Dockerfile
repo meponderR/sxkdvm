@@ -12,7 +12,7 @@ RUN xbps-install -Syyu &&\
 	ln -s /etc/sv /etc/service
 
 RUN xbps-install -Syyu qemu && mkdir -p /etc/sv/qemu /usr/lib/qemu/ && ln -s /etc/sv/qemu /var/service
-ADD enoch_rev2839_boot /usr/lib/qemu/
+ADD enoch_rev2902_boot /usr/lib/qemu/
 ADD boot.sh /etc/sv/qemu/run
 
 EXPOSE 2222 5800 5900
